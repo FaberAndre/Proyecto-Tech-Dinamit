@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energía Solar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="./scrip.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Energía Solar</h1>
+    <p>Explora el mundo de la energía solar: características, tipos, y mucho más.</p>
+  </header>
+
+  <main id="main">
+    <section id="inicio" class="active">
+      <h2>Menú de Secciones</h2>
+      <ul>
+        <li><a href="#" class="nav-link" data-target="que-es">¿Qué es?</a></li>
+        <li><a href="#" class="nav-link" data-target="caracteristicas">Características</a></li>
+        <li><a href="#" class="nav-link" data-target="tipos">Tipos de Energía Solar</a></li>
+        <li><a href="#" class="nav-link" data-target="importancia">Importancia</a></li>
+        <li><a href="#" class="nav-link" data-target="objetivo-general">Objetivo General</a></li>
+        <li><a href="#" class="nav-link" data-target="tabla-de-informacion">Tabla de Información</a></li>
+        <li><a href="#" class="nav-link" data-target="video">Video de Paneles Solares</a></li>
+        <li><a href="#" class="nav-link" data-target="grafica-barras">Gráfica de Barras</a></li>
+        <li><a href="#" class="nav-link" data-target="grafica-pastel">Gráfica de Pastel</a></li>
+        <li><a href="#" class="nav-link" data-target="grafica-area">Gráfica de area</a></li>
+        <li><a href="#" class="nav-link" data-target="grafica-lineas">Gráfica de lineas</a></li>
+        <li><a href="#" class="nav-link" data-target="calculadora">calculadora</a></li>
+        <li><a href="#" class="nav-link" data-target="encuesta">Encuesta de Quejas</a></li>
+        <li><a href="https://www.renewableenergyworld.com/solar-energy/" target="_blank">Enlace Externo</a></li>
+      </ul>
+    </section>
+
+    <title>Botón al Menú</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .button {
+        background-color: #00b8f0;
+        /* Color verde */
+        color: white;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #1700e2;
+      }
+    </style>
+    <button class="button" onclick="irAlMenu()">Ir al Menú</button>
+
+    <script>
+      function irAlMenu() {
+        const menuUrl = "index.html";
+        window.location.href = menuUrl;
+      }
+    </script>
+
+    <section id="que-es">
+      <h2>¿Qué es la Energía Solar?</h2>
+      <p>La energía solar es aquella que se obtiene a partir del sol en forma de radiación electromagnética (luz, calor
+        y
+        rayos ultravioleta). Mediante la instalación de paneles solares o colectores, se puede utilizar para obtener
+        energía térmica (sistema fototérmico) o para generar electricidad (sistema fotovoltaico).</p>
+      <img src="imagenes/amor.jpg" alt="Paneles solares">
+    </section>
+
+    <section id="caracteristicas">
+      
+      <img src="imagenes\descarga (2).jpg" alt="Tipos de energía solar"width="600" height="400">
+    </section>
+
+    <section id="tipos">
+      <h2>Tipos de Energía Solar</h2>
+      <ul>
+        <li><strong>Fotovoltaica:</strong> Convierte la luz solar directamente en electricidad.</li>
+        <li><strong>Térmica:</strong> Usa la energía del sol para generar calor.</li>
+        <li><strong>Pasiva:</strong> Aprovecha el diseño de los edificios para maximizar la luz y el calor natural.</li>
+      </ul>
+      <img src="imagenes/imagenes.jpg" alt="Tipos de energía solar">
+    </section>
+
+    <section id="importancia">
+      <h2>Importancia</h2>
+      <p>La energía solar es uno de los principales tipos de energía renovable y tiene un papel clave en la transición
+        energética. Ayuda a impulsar economías más limpias que protejan el medio ambiente, mejoren el bienestar de las
+        personas y garanticen la sostenibilidad de las empresas.</p>
+        <img src="imagenes\tupapa.jpg" alt="Tipos de energía solar">
+
+    </section>
+
+    <section id="objetivo-general">
+      <h2>Objetivo General</h2>
+      <p>es aprovechar la energía del sol de manera eficiente y sostenible para satisfacer las necesidades energéticas
+        de las personas, las industrias y las comunidades, reduciendo al mismo tiempo el impacto ambiental asociado al
+        uso de fuentes de energía tradicionales .</p>
+        <img src="imagenes\hello.jpg" alt="objetivo-general">
+    </section>
+    <section id="video">
+      <h2>Video de Paneles Solares</h2>
+      <video src="videos/Sol.mp4" autoplay muted loop class="background" width="300" height="200" ></video>
+    </section>
+
+    <section id="grafica-barras">
+      <h2>Producción de Energía Renovable por Fuente</h2>
+      <canvas id="energyChart" width="800" height="400"  ></canvas>
+    </section>
+
+    <section id="grafica-pastel">
+      <h2>Gráfica de Tipos de Energía Solar</h2>
+      <canvas id="grafico"></canvas>
+    </section>
+
+    <section id="grafica-area">
+      <h1>Gráfico de Área: Comparación entre el Emprendimiento y la Innovación</h1>
+      <canvas id="areaChart" width="800" height="400"></canvas>
+    </section>
+
+    <section id="grafica-lineas">
+      <h1>Gráfico de líneas:Tendencia en la Capacidad Instalada</h1>
+      <canvas id="lineChart" width="600" height="400"></canvas>
+    </section>
+
+    <section id="calculadora">
+      <form id="calculadora">
+        <p>Para saber cuanta energia solar forma parte de su consumo mensual, por favor llene el siguiente espacio</p>
+        <label for="HwhConsumidos">Ingrese su consumo mensual:</label>
+        <input type="text" id="HwhConsumidos" required> <br><br>
+
+        <button type="button" id="calc">Calcular</button>
+      </form>
+      <p id="RConsumo"></p>
+    </section>
+
+
+
+    <section id="encuesta">
+      <h2>Encuesta de Quejas</h2>
+      <form id="quejas-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="numero">Número de Teléfono:</label>
+        <input type="tel" id="numero" name="numero" required>
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <label for="queja">Tu Queja:</label>
+        <textarea id="queja" name="queja" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="tabla-de-informacion">
+
+      <h1> consumo de energia solar datravez de los años de distintos paises</h1>
+      <table id="tablaUsuarios">
+        <thead>
+          <tr>
+            <th>Entity</th>
+            <th>Code</th>
+            <th>Year</th>
+            <th>Electricity from solar (TWh)</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+</body>
